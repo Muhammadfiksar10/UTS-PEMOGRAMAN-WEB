@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Mahasiswa</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Dashboard Data Mahasiswa</h2>
+        
+        <!-- Tombol Aksi Utama -->
+        <div style="margin-bottom: 20px;">
+            <a href="tambah.php" class="btn-tambah">+ Tambah Mahasiswa Baru</a>
+        </div>
+
+        <!-- Tabel Data -->
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Foto Profil</th>
+                    <th>NIM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Jurusan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 
+                    Data ini nantinya akan di-loop menggunakan PHP atau Node.js. 
+                    Ini adalah contoh tampilan statisnya:
+                -->
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="uploads/default.png" alt="Profil" width="50" height="50">
+                    </td>
+                    <td>2024001</td>
+                    <td>Budi Santoso</td>
+                    <td>Teknik Informatika</td>
+                    <td class="action-links">
+                        <a href="edit.php?id=1" class="edit">Edit</a> | 
+                        <a href="hapus.php?id=1" class="hapus" onclick="return confirm('Apakah Anda yakin?')">Hapus</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Menghubungkan ke file JS jika diperlukan -->
+    <script src="script.js"></script>
+</body>
+</html>
